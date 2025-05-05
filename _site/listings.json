@@ -1,0 +1,21 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": []
+  },
+  {
+    "listing": "/about.html",
+    "items": []
+  },
+  {
+    "listing": "/stat-541-posts.html",
+    "items": [
+      "/stat-541-posts/2025-04-30-lab-2/index.html",
+      "/stat-541-posts/2025-04-30-lab-1/index.html"
+    ]
+  },
+  {
+    "listing": "/personal-projects.html",
+    "items": []
+  }
+]

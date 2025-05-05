@@ -1,16 +1,100 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "STAT 541",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "No matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Alisa-Krasilnikov.github.io",
+    "title": "About Me",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Hello, and welcome to my website! My name is Alisa, and I am a Master’s student at Cal Poly. I am currently studying statistics, and minoring in philosophy and computer science. This website is where I show off some projects, some done for class, and some for my own development. I hope you find my work interesting!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Personal Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Alisa Krasilnikov",
+    "section": "",
+    "text": "Hello, and welcome to my website! I am a Master’s student at Cal Poly, studying statistics and minoring in philosophy and computer science."
+  },
+  {
+    "objectID": "stat-541-posts.html",
+    "href": "stat-541-posts.html",
+    "title": "STAT 541",
+    "section": "",
+    "text": "Lab 2 - Advanced Data Visualizations\n\n\n\ndata visualization\n\ndata cleaning\n\n\n\nThis lab involved reviewing and improving upon visualizations from the Wellcome Global Monitor 2018 Report. This involved data cleaning, identifying grammar of graphics, and…\n\n\n\n\n\n\nApr 14, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 1 - Reviewing Quarto, ggplot, and dplyr\n\n\n\nData Visualization\n\nQuarto\n\n\n\nThis is the very first lab of STAT 541 and acted as a warm up to ensure we were familiar with some more basic Quarto functionality.\n\n\n\n\n\n\nApr 7, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "personal-projects.html",
+    "href": "personal-projects.html",
+    "title": "Personal Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-1/index.html",
+    "href": "stat-541-posts/2025-04-30-lab-1/index.html",
+    "title": "Lab 1 - Reviewing Quarto, ggplot, and dplyr",
+    "section": "",
+    "text": "View the code on GitHub\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(ggridges)"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-1/index.html#quarto",
+    "href": "stat-541-posts/2025-04-30-lab-1/index.html#quarto",
+    "title": "Lab 1 - Reviewing Quarto, ggplot, and dplyr",
+    "section": "Quarto",
+    "text": "Quarto\nFirst, let’s make sure you know how to use Markdown formatting to style a Quarto document.\n\nMake this text bold.\nMake this text italicized.\nMake these into a bullet point list:\n\n\nApples\nBananas\nPotatoes\n\n\nEdit the YAML to remove warning messages from being output in the rendered HTML file\nUsing code chunk options, make it so this chunk shows the plot but not the source code:\n\n\n\n\n\n\n\n\n\n\n\nUsing code chunk options, remove the messages about bandwidth geom_density_ridges() chose to use:\n\n\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_density_ridges() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\n\n\n\n\n\n\n\n\n\nUsing code chunk options, make it so that these plots are printed side-by-side:\n\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_boxplot() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_density_ridges() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\n\nPicking joint bandwidth of 1.31"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-1/index.knit.html",
+    "href": "stat-541-posts/2025-04-30-lab-1/index.knit.html",
+    "title": "Lab 1 - Reviewing Quarto, ggplot, and dplyr",
+    "section": "",
+    "text": "View the code on GitHub\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(ggridges)"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-1/index.knit.html#quarto",
+    "href": "stat-541-posts/2025-04-30-lab-1/index.knit.html#quarto",
+    "title": "Lab 1 - Reviewing Quarto, ggplot, and dplyr",
+    "section": "Quarto",
+    "text": "Quarto\nFirst, let’s make sure you know how to use Markdown formatting to style a Quarto document.\n\nMake this text bold.\nMake this text italicized.\nMake these into a bullet point list:\n\n\nApples\nBananas\nPotatoes\n\n\nEdit the YAML to remove warning messages from being output in the rendered HTML file\nUsing code chunk options, make it so this chunk shows the plot but not the source code:\n\n\n\n\n\n\n\n\n\n\n\nUsing code chunk options, remove the messages about bandwidth geom_density_ridges() chose to use:\n\n\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_density_ridges() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\n\n\n\n\n\n\n\n\n\nUsing code chunk options, make it so that these plots are printed side-by-side:\n\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_boxplot() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_density_ridges() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\n\nPicking joint bandwidth of 1.31"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-2/index.html",
+    "href": "stat-541-posts/2025-04-30-lab-2/index.html",
+    "title": "Lab 2 - Advanced Data Visualizations",
+    "section": "",
+    "text": "View the code on GitHub"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-2/index.html#part-one-identifying-bad-visualizations",
+    "href": "stat-541-posts/2025-04-30-lab-2/index.html#part-one-identifying-bad-visualizations",
+    "title": "Lab 2 - Advanced Data Visualizations",
+    "section": "Part One: Identifying Bad Visualizations",
+    "text": "Part One: Identifying Bad Visualizations\n\nI believe that this graph is showing that different countries have different proportions of individuals who believe that vaccines are safe. While most of the region medians fall around 85, the median percentage is considerably lower for Europe and the Former Soviet Union.\nWe have region, country, and percentage of country that believes vaccines are safe.\nx-axis: percentage of people who believe vaccines are safe, color: global region, “y-axis:” region (to produce the stacking).\nGeom_point; a dotplot\n\n\n\nThe points are trending upwards for seemingly no reason, which is misleading. I would do a boxplot or a density plot in order to better convey the message of the distributions within the regions.\nIf we’re trying to look at general trends between regions, it doesn’t make sense to label individual countries. I will remove these.\nThere is no reason to re-label the regions. I will remove the legend.\n\n\n\n\n\nlibrary(readxl)\nlibrary(tidyverse)\nlibrary(ggrepel)\nlibrary(leaflet)\nlibrary(rnaturalearth)\nlibrary(plotly)\n\n\ncountry_data &lt;- read_excel(\n  here::here(\"data\", \"wgm2018-dataset-crosstabs-all-countries.xlsx\"), \n                           sheet = \"Full dataset\")\n\ncountry_data_dictionary &lt;- read_excel(\n  here::here(\"data\", \"wgm2018-dataset-crosstabs-all-countries.xlsx\"), \n                           sheet = \"Data dictionary\")\n\n\ndictionary_firstrow &lt;- head(country_data_dictionary, n = 1)\n\nvariable_codes_list &lt;- as.list(str_split(dictionary_firstrow$`Variable Type & Codes*`, pattern = \",\"))\n\nvariable_codes_tibble &lt;- tibble(Code = str_trim(variable_codes_list[[1]]))\n\ncoding &lt;- variable_codes_tibble |&gt; \n  filter(str_trim(Code) != \"\") |&gt; \n  separate_wider_delim(Code, delim = \"=\", names_sep = \"Country\") |&gt; \n  rename(WP5 = \"CodeCountry1\", Country = \"CodeCountry2\") |&gt; \n  mutate(WP5 = as.numeric(WP5))\n\n\nfinal_dataset &lt;- cleaned_dataset |&gt; \n  group_by(Country, Regions_Report) |&gt; \n  summarize(\n    prop_safe_belief = sum(Q25 %in% c(1, 2), na.rm = TRUE) / sum(!is.na(Q25)),\n    .groups = \"drop\"\n  ) |&gt; \n  mutate(true_region = case_when(\n    Regions_Report %in% c(3, 13) ~ \"Middle East and North Africa\",\n    Regions_Report %in% c(9, 10, 11, 12, 18) ~ \"Asia\",\n    Regions_Report %in% c(1, 2, 4, 5) ~ \"Sub-Saharan Africa\",\n    Regions_Report %in% c(6, 7, 8) ~ \"Americas\",\n    Regions_Report %in% c(15, 16, 17) ~ \"Europe\",\n    Regions_Report == 14 ~ \"Former Soviet Union\",\n    TRUE ~ \"Not Assigned\"\n  )) |&gt; \n  filter(true_region != \"Not Assigned\",\n         !is.na(prop_safe_belief)) |&gt; \n  mutate(prop_safe_belief_percent = prop_safe_belief * 100) \n\n\nggplot(data = final_dataset, \n       mapping = aes(x = fct_reorder(true_region, prop_safe_belief_percent, .fun = median), \n                     y = prop_safe_belief_percent, \n                     color = true_region)) +\n  geom_boxplot(outlier.shape = NA, alpha = 0.3) +\n  geom_jitter(width = 0.05, alpha = 0.1, show.legend = FALSE) +\n  labs(\n    title = \"Percent of People Who Believe Vaccines are Safe, \\nby Country and Global Region\",\n    subtitle = \"Vertical Lines Represent Region Medians\",\n    caption = \"Source: Wellcome Global Monitor, part of the Gallup World Poll 2018\") +\n  theme_minimal() +\n  theme(panel.grid.major.y = element_blank(),\n        panel.grid.minor.x = element_blank(),\n        panel.grid.major.x = element_line(color = \"lightgrey\",\n                                  linewidth = 0.3),\n        axis.title.y = element_blank(),\n        axis.title.x = element_blank(),\n        axis.ticks.x = element_blank(),\n        legend.position = \"none\",\n        plot.caption = element_text(size = 7, hjust = 1, face = \"italic\")) +\n  coord_flip(ylim = c(20, 100))"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-2/index.html#part-two-broad-visualization-improvement",
+    "href": "stat-541-posts/2025-04-30-lab-2/index.html#part-two-broad-visualization-improvement",
+    "title": "Lab 2 - Advanced Data Visualizations",
+    "section": "Part Two: Broad Visualization Improvement",
+    "text": "Part Two: Broad Visualization Improvement\n\nChart 3.3: Map of countries according to levels of Trust in Scientists (pg. 55). Each country is supposed to display the amount of trust that a country has for scientists. It’s quite difficult to draw a lot of insights from this graph, but apparently we’re supposed to be able to recognize that countries with a lot of diversity tend to have a lot more trust in scientists.\nCountry, percentage of people who answered ‘high trust,’ percentage of ‘medium trust,’ and percentage of ‘low trust.’\nShape: country, color: trust percentage\nThis is a heatmap\n\n\n\nApparently, they displayed three different variables on the graph, the percentage of those that answered ‘high trust,’ ‘medium trust,’ and ‘low trust.’ However, I’m not quite sure how they managed to display this, as it’s on a sliding scale from low to high, rather than percentage. Based on their analysis, I have a feeling that they either just used the “high,” or just displayed the WGM_index. But, I will make this more clear.\nThe country colors all look very similar to each other. I believe I should make the colors for “low trust” and “high trust” more distinct.\nI think I should have an option to hover over the country and have it display its trust level. It’s difficult identifying which one has the largest trust.\n\n\n\n\n\nfinal_dataset_2 &lt;- cleaned_dataset |&gt; \n  group_by(Country) |&gt; \n  summarize(\n    total = n(),\n    prop_low_trust = (sum(WGM_Indexr == 1, na.rm = TRUE) / total) * 100,\n    prop_med_trust = (sum(WGM_Indexr == 2, na.rm = TRUE) / total) * 100,\n    prop_high_trust = (sum(WGM_Indexr == 3, na.rm = TRUE) / total) * 100,\n    prop_no_opinion = (sum(WGM_Indexr == 99, na.rm = TRUE) / total) * 100,\n    avg_trust = mean(WGM_Index, na.rm = TRUE),\n    .groups = \"drop\"\n  )\n\n\nfinal_dataset_2 &lt;- final_dataset_2 |&gt; \n  mutate(Country = case_when(\n    Country == \"United States\" ~ \"United States of America\",\n    Country == \"Czech Republic\" ~ \"Czechia\",\n    Country == \"Ivory Coast\" ~ \"Côte d'Ivoire\",\n    Country == \"Republic of Congo\" ~ \"Dem. Rep. Congo\",\n    TRUE ~ Country\n  ))\n\nworld &lt;- ne_countries(scale = \"medium\", returnclass = \"sf\")\nmap_data &lt;- world |&gt;\n  left_join(final_dataset_2, by = c(\"name\" = \"Country\")) |&gt; \n  filter(name != \"Antarctica\") \n\n\npal &lt;- colorNumeric(\n  palette = \"magma\",\n  domain = c(1, 4),\n  reverse = TRUE,\n  na.color = \"grey\"\n)\n\nleaflet(data = map_data) |&gt; \n  addTiles() |&gt; \n  addPolygons(\n    fillColor = ~pal(avg_trust),\n    color = \"white\",\n    weight = 0.5,\n    fillOpacity = 0.8,\n    popup = ~paste0(\n      \"&lt;b&gt;\", name, \"&lt;/b&gt;&lt;br&gt;\",\n      \"High Trust: \", round(prop_high_trust, 2), \"%&lt;br&gt;\",\n      \"Medium Trust: \", round(prop_med_trust, 2), \"%&lt;br&gt;\",\n      \"Low Trust: \", round(prop_low_trust, 2), \"%&lt;br&gt;\",\n      \"No Opinion: \", round(prop_no_opinion, 2), \"%&lt;br&gt;\",\n      \"Avg Science Trust Index: \", round(avg_trust, 2)\n    ),\n    label = ~paste(name, \"Average Trust in Science Index: \", round(avg_trust, 2))\n  ) |&gt; \n  addLegend(pal = pal, values = c(1, 4), title = \"Average Trust in Science Index\")"
+  },
+  {
+    "objectID": "stat-541-posts/2025-04-30-lab-2/index.html#part-three-third-data-visualization-improvement",
+    "href": "stat-541-posts/2025-04-30-lab-2/index.html#part-three-third-data-visualization-improvement",
+    "title": "Lab 2 - Advanced Data Visualizations",
+    "section": "Part Three: Third Data Visualization Improvement",
+    "text": "Part Three: Third Data Visualization Improvement\n\nChart 3.8: Scatterplot exploring the relationship between a country’s life expectancy at birth and people who trust doctors and nurses (pg. 101). This graph is trying to show that there is a positive relationship between the average life expectancy of a country, and how much they trust doctors and nurses. As one increases, the other does as well.\nCountry, average life expectancy, percentage of people who answered ‘a lot’ or ‘some.’\ny-axis: percentage of people who answered ‘a lot’ or ‘some,’ x-axis: average life expectancy, labels: country name\n\n\n\nThe axes are quite hard to read and are not centered\nWhile some countries are labeled for a reason, it appears as though most of the selected ones are arbitrary. I’ll try to add in a hover feature (which displays the country name and values) instead\n\n\n\n\n\nfinal_dataset_3 &lt;- cleaned_dataset |&gt;\n  group_by(Country) |&gt;\n  summarize(\n    n_trust_medic = sum(Q11E %in% c(1,2), na.rm = TRUE),\n    prop_trust_medic = sum(Q11E %in% c(1,2), na.rm = TRUE)/sum(!is.na(Q11E))\n  )\n\n\nlife &lt;- read_excel(\n  here::here(\"data\", \"Life.xls\"), \n  skip = 3,\n  sheet = \"Data\")\n\n\nlife &lt;- life |&gt; \n  select(`Country Name`, `2018`)\n\n\nfinal_dataset_3 &lt;- life |&gt;\n  left_join(final_dataset_3, by = c(\"Country Name\" = \"Country\"))\n\n\nfinal_dataset_3 &lt;- final_dataset_3 |&gt;  \n  filter(!is.na(prop_trust_medic))\n\nfit &lt;- lm(prop_trust_medic ~ `2018`, data = final_dataset_3) |&gt; fitted.values()\n\nplot &lt;- plot_ly(\n  data = final_dataset_3,\n  x = ~`2018`,\n  y = ~prop_trust_medic * 100,\n  type = 'scatter',\n  mode = 'markers',\n  text = ~paste(\n    \"Country: \", `Country Name`, \"&lt;br&gt;\",\n    \"Proportion of Trust in Doctors and Nurses: \", round(prop_trust_medic * 100, 1), \"%&lt;br&gt;\",\n    \"Life Expectancy: \", `2018`\n  ),\n  hoverinfo = 'text',\n  marker = list(size = 10)\n)\n\nplot &lt;- layout(\n  plot,\n  title = list(\n    text = \"\\nRelationship Between a Country’s Life Expectancy and its Trust in Medical Professionals\\n \",\n    font = list(size = 15),\n    x = 0.07,\n    xanchor = \"left\"\n  ),\n  xaxis = list(\n    title = \"Life Expectancy at Birth (2018)\",\n    dtick = 10\n  ),\n  yaxis = list(\n    title = \"\"\n  )\n)\n\nplot"
   }
 ]

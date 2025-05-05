@@ -2,13 +2,15 @@ project:
   type: website
 
 website:
-  title: "Alisa-Krasilnikov.github.io"
   navbar:
-    left:
+    title: Alisa Krasilnikov's Personal Website
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
-
+      - href: personal-projects.qmd
+        text: Personal Projects
+      - href: stat-541-posts.qmd 
+        text: STAT 541 Portfolio
 format:
   html:
     theme:

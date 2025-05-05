@@ -1,0 +1,17 @@
+{
+  "hash": "c1c287d732bbfe0b88fe50ba989f68a3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Lab 1 - Reviewing Quarto, ggplot, and dplyr\"\ndescription: \"This is the very first lab of STAT 541 and acted as a warm up to ensure we were familiar with some more basic Quarto functionality.\"  \ndate: 04-07-2025\ncategories: [Data Visualization, Quarto] # self-defined categories\ndraft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!\nimage: preview_image.png\n---\n\n[View the code on GitHub](https://github.com/Alisa-Krasilnikov/lab-1)\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n\n\n:::\n\n```{.r .cell-code}\nlibrary(ggridges)\n```\n:::\n\n\n## Quarto\n\nFirst, let's make sure you know how to use Markdown formatting to style a Quarto document.\n\n1.  **Make this text bold.**\n\n2.  *Make this text italicized.*\n\n3.  Make these into a bullet point list:\n\n-   Apples\n\n-   Bananas\n\n-   Potatoes\n\n4.  Edit the YAML to remove warning messages from being output in the rendered HTML file\n\n5.  Using code chunk options, make it so this chunk shows the plot but not the source code:\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/remove-source-code-1.png){width=672}\n:::\n:::\n\n\n6.  Using code chunk options, remove the messages about bandwidth `geom_density_ridges()` chose to use:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_density_ridges() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/remove-bandwidth-message-1.png){width=672}\n:::\n:::\n\n\n7.  Using code chunk options, make it so that these plots are printed side-by-side:\n\n\n::: {.cell layout-ncol=\"2\"}\n\n```{.r .cell-code}\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_boxplot() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/side-by-side-plot-1.png){width=672}\n:::\n\n```{.r .cell-code}\nggplot(data = mpg, \n       mapping = aes(y = manufacturer, x = hwy)) + \n  geom_density_ridges() +\n  labs(x = \"\",\n       y = \"\", \n       title = \"Highway Milage (mpg) for Different Car Manufacturers\"\n       )\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nPicking joint bandwidth of 1.31\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/side-by-side-plot-2.png){width=672}\n:::\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

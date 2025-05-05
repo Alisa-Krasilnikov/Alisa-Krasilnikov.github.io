@@ -1,0 +1,85 @@
+---
+title: "Lab 1 - Reviewing Quarto, ggplot, and dplyr"
+description: "This is the very first lab of STAT 541 and acted as a warm up to ensure we were familiar with some more basic Quarto functionality."  
+date: 04-07-2025
+categories: [Data Visualization, Quarto] # self-defined categories
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+image: preview_image.png
+---
+
+[View the code on GitHub](https://github.com/Alisa-Krasilnikov/lab-1)
+
+```{r, warning=FALSE}
+#| label: packages-setup
+
+library(tidyverse)
+library(ggridges)
+```
+
+## Quarto
+
+First, let's make sure you know how to use Markdown formatting to style a Quarto document.
+
+1.  **Make this text bold.**
+
+2.  *Make this text italicized.*
+
+3.  Make these into a bullet point list:
+
+-   Apples
+
+-   Bananas
+
+-   Potatoes
+
+4.  Edit the YAML to remove warning messages from being output in the rendered HTML file
+
+5.  Using code chunk options, make it so this chunk shows the plot but not the source code:
+
+```{r, echo=FALSE}
+#| label: remove-source-code
+ggplot(data = mpg, 
+       mapping = aes(y = manufacturer, x = hwy)) + 
+  geom_boxplot() +
+  labs(x = "",
+       y = "", 
+       title = "Highway Milage (mpg) for Different Car Manufacturers"
+       )
+```
+
+6.  Using code chunk options, remove the messages about bandwidth `geom_density_ridges()` chose to use:
+
+```{r}
+#| label: remove-bandwidth-message
+#| message: FALSE
+ggplot(data = mpg, 
+       mapping = aes(y = manufacturer, x = hwy)) + 
+  geom_density_ridges() +
+  labs(x = "",
+       y = "", 
+       title = "Highway Milage (mpg) for Different Car Manufacturers"
+       )
+```
+
+7.  Using code chunk options, make it so that these plots are printed side-by-side:
+
+```{r}
+#| label: side-by-side-plot
+#| layout-ncol: 2
+ggplot(data = mpg, 
+       mapping = aes(y = manufacturer, x = hwy)) + 
+  geom_boxplot() +
+  labs(x = "",
+       y = "", 
+       title = "Highway Milage (mpg) for Different Car Manufacturers"
+       )
+
+ggplot(data = mpg, 
+       mapping = aes(y = manufacturer, x = hwy)) + 
+  geom_density_ridges() +
+  labs(x = "",
+       y = "", 
+       title = "Highway Milage (mpg) for Different Car Manufacturers"
+       )
+
+```
