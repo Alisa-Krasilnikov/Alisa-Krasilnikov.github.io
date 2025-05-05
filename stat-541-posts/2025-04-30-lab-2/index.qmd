@@ -2,8 +2,9 @@
 title: "Lab 2 - Advanced Data Visualizations"
 description: "This lab involved reviewing and improving upon visualizations from the Wellcome Global Monitor 2018 Report. This involved data cleaning, identifying grammar of graphics, and thinking through visualization best practices."  
 date: 04-14-2025
-categories: [data visualization, data cleaning] # self-defined categories
+categories: [Data Visualization, Data Cleaning] # self-defined categories
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+image: preview_image.png
 ---
 
 [View the code on GitHub](https://github.com/Alisa-Krasilnikov/lab-2)

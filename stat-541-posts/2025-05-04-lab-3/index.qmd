@@ -1,0 +1,15 @@
+---
+title: "Lab 3 - Static Quarto Dashboards"
+description: "This lab involved expanding upon the work done in the previous lab. We had to use the visualizations that we created and make a static dashboard that would show off our work."  
+date: 04-21-2025
+categories: [Data Visualization, Data Cleaning, Quarto] # self-defined categories
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+image: preview_image.png
+---
+
+Since this is a Quarto dashboard rather than an html file, I can't publish it here. But, I included the link to where the dashboard is published on Quarto Pub. 
+
+[Here's the link to the dashboard](<https://alisa-kras.quarto.pub/trust-in-science-and-medicine-analysis-(2018/)>)
+
+[View the code on GitHub](https://github.com/Alisa-Krasilnikov/lab-3)
+

@@ -1,0 +1,14 @@
+---
+title: "Lab 4 - Dynamic Quarto Dashboards"
+description: "This lab once again involved expanding upon the work done in the previous lab, where I created a static Quarto dashboard. Now that we had a baseline setup of our dashboard, we needed to find ways of incorporating user input. I did this by creating a Shiny app."  
+date: 04-28-2025
+categories: [Data Visualization, Data Cleaning, Shiny] # self-defined categories
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+image: preview_image.png
+---
+
+Since this is a Shiny app rather than an html file, I can't publish it here. But, I included the link to where the dashboard is published on shinyapps.io.
+
+[Here's the link to the Shiny app](https://alisa-krasilnikov.shinyapps.io/lab-4/)
+
+[View the code on GitHub](https://github.com/Alisa-Krasilnikov/lab-4)
