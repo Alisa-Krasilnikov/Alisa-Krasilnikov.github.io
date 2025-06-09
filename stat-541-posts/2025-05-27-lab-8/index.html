@@ -191,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p><strong>Note:</strong> This is an assignment that I reworked after I got some feedback on. It was initially a collaborative assignment, but the adjustments I made after receiving a grade were done independently. There are two GitHub links below, one which contains the initial assignment, and one that contains the finalized assignment. However, the final assignment’s code is listed here.</p>
+<p><strong>Note:</strong> This is an assignment that I reworked after I got some feedback. It was initially a collaborative assignment, but the adjustments I made after receiving a grade were done independently. There are two GitHub links below, one which contains the initial assignment, and one that contains the finalized assignment. However, the final assignment’s code is listed here.</p>
 <p><a href="https://github.com/hersheyk/lab-8">View the collaborative code on GitHub</a></p>
 <p><a href="https://github.com/Alisa-Krasilnikov/Lab-8-Adj">View the final code on GitHub</a></p>
 <blockquote class="blockquote">
@@ -204,8 +204,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Part 1:</strong> Locate and examine the <code>robots.txt</code> file for this website. Summarize what you learn from it.</p>
-<p><a href="https://www.cheese.com/robots.txt" class="uri">https://www.cheese.com/robots.txt</a> User-agent: * Sitemap: https://www.cheese.com/sitemap.xml</p>
-<p>User-agent: *: anyone is allowed to scrape No Crawl-delay: no wait time is required between each page scraped No Visit-time entry: no restrictions on time that scraping is allowed No Request-rate entry: no restrictions on simultaneous requests No mention of Disallow sections</p>
+<p><a href="https://www.cheese.com/robots.txt" class="uri">https://www.cheese.com/robots.txt</a></p>
+<p>User-agent: *</p>
+<p>Sitemap: https://www.cheese.com/sitemap.xml</p>
+<ul>
+<li>User-agent: *: anyone is allowed to scrape</li>
+<li>No Crawl-delay: no wait time is required between each page scraped</li>
+<li>No Visit-time entry: no restrictions on time that scraping is allowed</li>
+<li>No Request-rate entry: no restrictions on simultaneous requests</li>
+<li>No mention of Disallow sections</li>
+</ul>
 <p><strong>Part 2:</strong> Learn about the <code>html_attr()</code> function from <code>rvest</code>. Describe how this function works with a small example.</p>
 <p>It gets the an attribute of a single html element. You can pull various details of an element, such as the reference link, the class, the name, the css styling etc. Below I have initialized a basic html. We stated that the reference link for the first element is a.com and that the class is ‘vital’. For the second we do the same but with href being alisa.com and the class being ‘541’. For the last we can see when the attribute is outside of the <a></a> it is not recognized as an attribute. Thus the class, “active” is not pulled, but the href, harshini.com is pulled.</p>
 <div class="cell">
