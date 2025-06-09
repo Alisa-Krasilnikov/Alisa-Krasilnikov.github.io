@@ -181,19 +181,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#part-1-locate-and-examine-the-robots.txt-file-for-this-website.-summarize-what-you-learn-from-it." id="toc-part-1-locate-and-examine-the-robots.txt-file-for-this-website.-summarize-what-you-learn-from-it." class="nav-link active" data-scroll-target="#part-1-locate-and-examine-the-robots.txt-file-for-this-website.-summarize-what-you-learn-from-it."><strong>Part 1:</strong> Locate and examine the <code>robots.txt</code> file for this website. Summarize what you learn from it.</a></li>
-  <li><a href="#part-2-learn-about-the-html_attr-function-from-rvest.-describe-how-this-function-works-with-a-small-example." id="toc-part-2-learn-about-the-html_attr-function-from-rvest.-describe-how-this-function-works-with-a-small-example." class="nav-link" data-scroll-target="#part-2-learn-about-the-html_attr-function-from-rvest.-describe-how-this-function-works-with-a-small-example."><strong>Part 2:</strong> Learn about the <code>html_attr()</code> function from <code>rvest</code>. Describe how this function works with a small example.</a></li>
-  <li><a href="#part-3-do-this-alongside-part-4-below.-i-used-chatgpt-to-start-the-process-of-scraping-cheese-information-with-the-following-prompt" id="toc-part-3-do-this-alongside-part-4-below.-i-used-chatgpt-to-start-the-process-of-scraping-cheese-information-with-the-following-prompt" class="nav-link" data-scroll-target="#part-3-do-this-alongside-part-4-below.-i-used-chatgpt-to-start-the-process-of-scraping-cheese-information-with-the-following-prompt"><strong>Part 3:</strong> (Do this alongside Part 4 below.) I used ChatGPT to start the process of scraping cheese information with the following prompt:</a></li>
-  <li><a href="#part-4-obtain-the-following-information-for-all-cheeses-in-the-database" id="toc-part-4-obtain-the-following-information-for-all-cheeses-in-the-database" class="nav-link" data-scroll-target="#part-4-obtain-the-following-information-for-all-cheeses-in-the-database"><strong>Part 4:</strong> Obtain the following information for <strong>all</strong> cheeses in the database:</a></li>
-  <li><a href="#part-5-when-you-go-to-a-particular-cheeses-page-like-gouda-youll-see-more-detailed-information-about-the-cheese.-for-just-10-of-the-cheeses-in-the-database-obtain-the-following-detailed-information" id="toc-part-5-when-you-go-to-a-particular-cheeses-page-like-gouda-youll-see-more-detailed-information-about-the-cheese.-for-just-10-of-the-cheeses-in-the-database-obtain-the-following-detailed-information" class="nav-link" data-scroll-target="#part-5-when-you-go-to-a-particular-cheeses-page-like-gouda-youll-see-more-detailed-information-about-the-cheese.-for-just-10-of-the-cheeses-in-the-database-obtain-the-following-detailed-information"><strong>Part 5:</strong> When you go to a particular cheese’s page (like gouda), you’ll see more detailed information about the cheese. For <u><strong>just 10</strong></u> of the cheeses in the database, obtain the following detailed information:</a></li>
-  <li><a href="#part-6-evaluate-the-code-that-you-wrote-in-terms-of-efficiency.-to-what-extent-do-your-functions-adhere-to-the-principles-for-writing-good-functions-to-what-extent-are-your-functions-efficient-to-what-extent-is-your-iteration-of-these-functions-efficient" id="toc-part-6-evaluate-the-code-that-you-wrote-in-terms-of-efficiency.-to-what-extent-do-your-functions-adhere-to-the-principles-for-writing-good-functions-to-what-extent-are-your-functions-efficient-to-what-extent-is-your-iteration-of-these-functions-efficient" class="nav-link" data-scroll-target="#part-6-evaluate-the-code-that-you-wrote-in-terms-of-efficiency.-to-what-extent-do-your-functions-adhere-to-the-principles-for-writing-good-functions-to-what-extent-are-your-functions-efficient-to-what-extent-is-your-iteration-of-these-functions-efficient"><strong>Part 6:</strong> Evaluate the code that you wrote in terms of <strong>efficiency</strong>. To what extent do your function(s) adhere to the <strong>principles for writing good functions</strong>? To what extent are your <strong>functions efficient</strong>? To what extent is your <strong>iteration of these functions efficient</strong>?</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -214,13 +203,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="part-1-locate-and-examine-the-robots.txt-file-for-this-website.-summarize-what-you-learn-from-it." class="level2">
-<h2 class="anchored" data-anchor-id="part-1-locate-and-examine-the-robots.txt-file-for-this-website.-summarize-what-you-learn-from-it."><strong>Part 1:</strong> Locate and examine the <code>robots.txt</code> file for this website. Summarize what you learn from it.</h2>
+<p><strong>Part 1:</strong> Locate and examine the <code>robots.txt</code> file for this website. Summarize what you learn from it.</p>
 <p><a href="https://www.cheese.com/robots.txt" class="uri">https://www.cheese.com/robots.txt</a> User-agent: * Sitemap: https://www.cheese.com/sitemap.xml</p>
 <p>User-agent: *: anyone is allowed to scrape No Crawl-delay: no wait time is required between each page scraped No Visit-time entry: no restrictions on time that scraping is allowed No Request-rate entry: no restrictions on simultaneous requests No mention of Disallow sections</p>
-</section>
-<section id="part-2-learn-about-the-html_attr-function-from-rvest.-describe-how-this-function-works-with-a-small-example." class="level2">
-<h2 class="anchored" data-anchor-id="part-2-learn-about-the-html_attr-function-from-rvest.-describe-how-this-function-works-with-a-small-example."><strong>Part 2:</strong> Learn about the <code>html_attr()</code> function from <code>rvest</code>. Describe how this function works with a small example.</h2>
+<p><strong>Part 2:</strong> Learn about the <code>html_attr()</code> function from <code>rvest</code>. Describe how this function works with a small example.</p>
 <p>It gets the an attribute of a single html element. You can pull various details of an element, such as the reference link, the class, the name, the css styling etc. Below I have initialized a basic html. We stated that the reference link for the first element is a.com and that the class is ‘vital’. For the second we do the same but with href being alisa.com and the class being ‘541’. For the last we can see when the attribute is outside of the <a></a> it is not recognized as an attribute. Thus the class, “active” is not pulled, but the href, harshini.com is pulled.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># below we initialize a basic html</span></span>
@@ -246,9 +232,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 "https://harshini.com" </code></pre>
 </div>
 </div>
-</section>
-<section id="part-3-do-this-alongside-part-4-below.-i-used-chatgpt-to-start-the-process-of-scraping-cheese-information-with-the-following-prompt" class="level2">
-<h2 class="anchored" data-anchor-id="part-3-do-this-alongside-part-4-below.-i-used-chatgpt-to-start-the-process-of-scraping-cheese-information-with-the-following-prompt"><strong>Part 3:</strong> (Do this alongside Part 4 below.) I used <a href="https://chat.openai.com/chat">ChatGPT</a> to start the process of scraping cheese information with the following prompt:</h2>
+<p><strong>Part 3:</strong> (Do this alongside Part 4 below.) I used <a href="https://chat.openai.com/chat">ChatGPT</a> to start the process of scraping cheese information with the following prompt:</p>
 <blockquote class="blockquote">
 <p>Write R code using the rvest package that allows me to scrape cheese information from cheese.com.</p>
 </blockquote>
@@ -292,9 +276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the data frame</span></span>
 <span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cheese_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="part-4-obtain-the-following-information-for-all-cheeses-in-the-database" class="level2">
-<h2 class="anchored" data-anchor-id="part-4-obtain-the-following-information-for-all-cheeses-in-the-database"><strong>Part 4:</strong> Obtain the following information for <strong>all</strong> cheeses in the database:</h2>
+<p><strong>Part 4:</strong> Obtain the following information for <strong>all</strong> cheeses in the database:</p>
 <ul>
 <li>cheese name</li>
 <li>URL for the cheese’s webpage (e.g., <a href="https://www.cheese.com/gouda/" class="uri">https://www.cheese.com/gouda/</a>)</li>
@@ -375,9 +357,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 6 Abbaye de Belloc                  https://cheese.com/abbaye-de-belloc/ TRUE   </code></pre>
 </div>
 </div>
-</section>
-<section id="part-5-when-you-go-to-a-particular-cheeses-page-like-gouda-youll-see-more-detailed-information-about-the-cheese.-for-just-10-of-the-cheeses-in-the-database-obtain-the-following-detailed-information" class="level2">
-<h2 class="anchored" data-anchor-id="part-5-when-you-go-to-a-particular-cheeses-page-like-gouda-youll-see-more-detailed-information-about-the-cheese.-for-just-10-of-the-cheeses-in-the-database-obtain-the-following-detailed-information"><strong>Part 5:</strong> When you go to a particular cheese’s page (like <a href="https://www.cheese.com/gouda/">gouda</a>), you’ll see more detailed information about the cheese. For <u><strong>just 10</strong></u> of the cheeses in the database, obtain the following detailed information:</h2>
+<p><strong>Part 5:</strong> When you go to a particular cheese’s page (like <a href="https://www.cheese.com/gouda/">gouda</a>), you’ll see more detailed information about the cheese. For <u><strong>just 10</strong></u> of the cheeses in the database, obtain the following detailed information:</p>
 <ul>
 <li>milk information</li>
 <li>country of origin</li>
@@ -472,14 +452,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 10 pasteurized cow's milk     France      &lt;NA&gt;     semi-hard             salty,…</code></pre>
 </div>
 </div>
-</section>
-<section id="part-6-evaluate-the-code-that-you-wrote-in-terms-of-efficiency.-to-what-extent-do-your-functions-adhere-to-the-principles-for-writing-good-functions-to-what-extent-are-your-functions-efficient-to-what-extent-is-your-iteration-of-these-functions-efficient" class="level2">
-<h2 class="anchored" data-anchor-id="part-6-evaluate-the-code-that-you-wrote-in-terms-of-efficiency.-to-what-extent-do-your-functions-adhere-to-the-principles-for-writing-good-functions-to-what-extent-are-your-functions-efficient-to-what-extent-is-your-iteration-of-these-functions-efficient"><strong>Part 6:</strong> Evaluate the code that you wrote in terms of <strong>efficiency</strong>. To what extent do your function(s) adhere to the <strong>principles for writing good functions</strong>? To what extent are your <strong>functions efficient</strong>? To what extent is your <strong>iteration of these functions efficient</strong>?</h2>
+<p><strong>Part 6:</strong> Evaluate the code that you wrote in terms of <strong>efficiency</strong>. To what extent do your function(s) adhere to the <strong>principles for writing good functions</strong>? To what extent are your <strong>functions efficient</strong>? To what extent is your <strong>iteration of these functions efficient</strong>?</p>
 <p>Our code for scraping cheese data from cheese.com is fairly efficient and follows several principles of writing good functions. First of all, our functions are well-named, each with a single clear purpose. Scrape_page() extracts cheese names, URLs, and image existence, while cheese_scrape() focuses on extracting detailed cheese characteristics from individual pages. This separation improved reusability, and allows our function to be cleaner. We did our best to make our functions flexible. For example, extract_links() allows us to set how many cheese URLs to extract. Efficiency-wise, the code uses vectorized operations to the best of our knowledge and avoids repeated work, such as reloading libraries or scraping unnecessary pages. We used map() for iteration over multiple pages ensuring cleaner application of functions across a list of URLs. Additionally, adding the Sys.sleep(1) pause respects the server’s resources. One area for potential improvement could be if we optimized the scraping logic to avoid redundant parsing, some operations could be done once per page instead od multiple times per element.</p>
 <p>Overall, I think we did pretty good, but there are still ways we could make our code more efficient!</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
