@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Personal Projects</title>
+<title>My Experience</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,65 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -154,7 +94,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./experience.html"> 
+    <a class="nav-link active" href="./experience.html" aria-current="page"> 
 <span class="menu-text">My Experience</span></a>
   </li>  
   <li class="nav-item">
@@ -173,14 +113,24 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#research" id="toc-research" class="nav-link active" data-scroll-target="#research">Research</a>
+  <ul class="collapse">
+  <li><a href="#masters-thesis-interactive-visualization-with-youdrawitr" id="toc-masters-thesis-interactive-visualization-with-youdrawitr" class="nav-link" data-scroll-target="#masters-thesis-interactive-visualization-with-youdrawitr">Master’s Thesis: Interactive Visualization with youDrawItR</a></li>
+  <li><a href="#additional-research-gifs-in-data-science-education" id="toc-additional-research-gifs-in-data-science-education" class="nav-link" data-scroll-target="#additional-research-gifs-in-data-science-education">Additional Research: GIFs in Data Science Education</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Personal Projects</h1>
+<h1 class="title">My Experience</h1>
 </div>
 
 
@@ -197,16 +147,30 @@ window.Quarto = {
 </header>
 
 
+<p>Below is my list of my work and coding experience, including their descriptions and my accomplsihments. It contains slightly more information about my roles than my resume, since I’m not constrained by space. I hope you enjoy taking the time to learn about what I have done!</p>
+<section id="research" class="level1">
+<h1>Research</h1>
+<section id="masters-thesis-interactive-visualization-with-youdrawitr" class="level2">
+<h2 class="anchored" data-anchor-id="masters-thesis-interactive-visualization-with-youdrawitr">Master’s Thesis: Interactive Visualization with youDrawItR</h2>
+<p>My thesis focuses on the development and refinement of the R package youDrawItR, which allows users to interact directly with line charts by drawing predictions or trends with their mouse. This interactivity has powerful implications for both data storytelling and education.</p>
+<p>Currently, I’m working on cleaning and documenting the package in preparation for publication on CRAN. Beyond that, we’re planning a series of side studies to evaluate its use cases, especially in statistical and mathematical education. I’m particularly excited about exploring how youDrawItR can enhance student engagement and conceptual understanding when learning to interpret graphs.</p>
+<p><strong>Skills Learned from This Experience:</strong></p>
+<ul>
+<li><strong>Javascript D3</strong>: Most of the coding involved in this project is in Javascript D3. I learned a little bit of Javascript when I was in high school, but this definitely took it to a whole new level. I love how it can be used to make absolutely stunning visuals.</li>
+<li><strong>R</strong>: This is an R package, of course, so I should definitely know how to use R :) However, I’m definitely pushing myself to get better at making vignettes and Shiny apps. A key goal of the project is to make the visualizations accessible to users who may not be familiar with R (or even coding at all) so designing intuitive interfaces and clear documentation has been a major focus.</li>
+<li><strong>Technical Writing and Documentation</strong>: I have come to really appreciate code that is written out clearly and cleanly. I aim to do the same for youDrawItR. My goal is to write thorough, beginner-friendly documentation that make the package approachable for users at all levels. I really want to encourage people (especially future Master’s students at Cal Poly) to add on to the package. I feel like any work I do this year will just scratch the surface of this package’s capabilities.</li>
+<li><strong>Presentation</strong>: I’ve had the opportunity to present my work on a couple different occasions. I’ve really learned to know my audience, and to pinpoint what they would find interesting about my work.</li>
+</ul>
+</section>
+<section id="additional-research-gifs-in-data-science-education" class="level2">
+<h2 class="anchored" data-anchor-id="additional-research-gifs-in-data-science-education">Additional Research: GIFs in Data Science Education</h2>
+<p>This research focuses on</p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

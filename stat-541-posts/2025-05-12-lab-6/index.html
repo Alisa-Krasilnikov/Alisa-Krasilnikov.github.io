@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-05-12">
-<meta name="description" content="Within this lab, we were taught some best-practices for to creating functions. Then, we were asked to write functions as efficiently as we can. This was one of my first times writing functions in R, so I don’t think they were the absolute best, but they serve as a great reference point for how I improved throughout the course!">
+<meta name="description" content="I really wanted to get a little better with functions in R, so I decided to study up on some best-practices. Then, I tried to accomplish some tasks, making functions as efficient as I could. This was one of my first times writing functions in R, so I don’t think they were the absolute best, but they serve as a great reference point for how I keep improving!">
 
-<title>Lab 6 - Code Efficiency</title>
+<title>Code Efficiency</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -131,12 +131,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../personal-projects.html"> 
-<span class="menu-text">Personal Projects</span></a>
+    <a class="nav-link" href="../../experience.html"> 
+<span class="menu-text">My Experience</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../stat-541-posts.html"> 
-<span class="menu-text">STAT 541 Portfolio</span></a>
+<span class="menu-text">R Code Projects</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -149,10 +149,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Lab 6 - Code Efficiency</h1>
+      <h1 class="title">Code Efficiency</h1>
                   <div>
         <div class="description">
-          Within this lab, we were taught some best-practices for to creating functions. Then, we were asked to write functions as efficiently as we can. This was one of my first times writing functions in R, so I don’t think they were the absolute best, but they serve as a great reference point for how I improved throughout the course!
+          I really wanted to get a little better with functions in R, so I decided to study up on some best-practices. Then, I tried to accomplish some tasks, making functions as efficient as I could. This was one of my first times writing functions in R, so I don’t think they were the absolute best, but they serve as a great reference point for how I keep improving!
         </div>
       </div>
                           <div class="quarto-categories">
@@ -187,12 +187,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#setting-the-stage" id="toc-setting-the-stage" class="nav-link active" data-scroll-target="#setting-the-stage">Setting the Stage</a></li>
   <li><a href="#helper-functions" id="toc-helper-functions" class="nav-link" data-scroll-target="#helper-functions">Helper Functions</a>
   <ul class="collapse">
-  <li><a href="#testing-your-function" id="toc-testing-your-function" class="nav-link" data-scroll-target="#testing-your-function">Testing Your Function!</a></li>
-  <li><a href="#testing-your-function-1" id="toc-testing-your-function-1" class="nav-link" data-scroll-target="#testing-your-function-1">Testing Your Function!</a></li>
+  <li><a href="#testing-my-function" id="toc-testing-my-function" class="nav-link" data-scroll-target="#testing-my-function">Testing My Function!</a></li>
+  <li><a href="#testing-my-function-1" id="toc-testing-my-function-1" class="nav-link" data-scroll-target="#testing-my-function-1">Testing My Function!</a></li>
   </ul></li>
   <li><a href="#primary-function" id="toc-primary-function" class="nav-link" data-scroll-target="#primary-function">Primary Function</a>
   <ul class="collapse">
-  <li><a href="#testing-your-function-2" id="toc-testing-your-function-2" class="nav-link" data-scroll-target="#testing-your-function-2">Testing Your Function!</a></li>
+  <li><a href="#testing-my-function-2" id="toc-testing-my-function-2" class="nav-link" data-scroll-target="#testing-my-function-2">Testing My Function!</a></li>
   </ul></li>
   <li><a href="#iteration" id="toc-iteration" class="nav-link" data-scroll-target="#iteration">Iteration</a>
   <ul class="collapse">
@@ -209,7 +209,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p><strong>Note:</strong> This lab was submitted and then adjusted after I received some feedback on it. The GitHub link should contain all of the versions, but the code displayed here is just my final version.</p>
 <p><a href="https://github.com/Alisa-Krasilnikov/lab-6">View the code on GitHub</a></p>
 <section id="setting-the-stage" class="level1">
 <h1>Setting the Stage</h1>
@@ -240,7 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="helper-functions" class="level1">
 <h1>Helper Functions</h1>
-<p><strong>Exercise 1:</strong> Write a function that removes outliers in a dataset. The user should be able to supply the dataset, the variables to remove outliers from, and a threshold on the number of SDs away from the mean used to define outliers. <em>Hint 1: You will need to calculate a z-score to filter the values!</em> <em>Hint 2: You might want to consider specifying a default value (e.g., 3) for <code>sd_thresh</code>.</em></p>
+<p><strong>Goal 1:</strong> Write a function that removes outliers in a dataset. The user should be able to supply the dataset, the variables to remove outliers from, and a threshold on the number of SDs away from the mean used to define outliers.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>remove_outliers <span class="ot">&lt;-</span> <span class="cf">function</span>(data, ..., <span class="at">sd_thresh =</span> <span class="dv">3</span>) {</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  dt <span class="ot">&lt;-</span> <span class="fu">as.data.table</span>(data)</span>
@@ -271,8 +270,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(dt[keep_rows])</span>
 <span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="testing-your-function" class="level2">
-<h2 class="anchored" data-anchor-id="testing-your-function">Testing Your Function!</h2>
+<section id="testing-my-function" class="level2">
+<h2 class="anchored" data-anchor-id="testing-my-function">Testing My Function!</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Testing how your function handles multiple input variables</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">remove_outliers</span>(diamonds, </span>
@@ -341,7 +340,7 @@ not numeric and will be skipped: color</code></pre>
 50099:  0.75     Ideal     D     SI2  62.2    55  2757  5.83  5.87  3.64</code></pre>
 </div>
 </div>
-<p><strong>Exercise 2:</strong> Write a function that imputes missing values for numeric variables in a dataset. The user should be able to supply the dataset, the variables to impute values for, and a function to use when imputing. <em>Hint 1: You will need to use <code>across()</code> to apply your function, since the user can input multiple variables.</em> <em>Hint 2: The <code>replace_na()</code> function is helpful here!</em></p>
+<p><strong>Goal 2:</strong> Write a function that imputes missing values for numeric variables in a dataset. The user should be able to supply the dataset, the variables to impute values for, and a function to use when imputing.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>impute_missing_dt <span class="ot">&lt;-</span> <span class="cf">function</span>(data, ..., <span class="at">impute_fun =</span> mean) { </span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#Capture column names</span></span>
@@ -366,8 +365,8 @@ not numeric and will be skipped: color</code></pre>
 <span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="testing-your-function-1" class="level2">
-<h2 class="anchored" data-anchor-id="testing-your-function-1">Testing Your Function!</h2>
+<section id="testing-my-function-1" class="level2">
+<h2 class="anchored" data-anchor-id="testing-my-function-1">Testing My Function!</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Testing how your function handles multiple input variables</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">impute_missing_dt</span>(nycflights13<span class="sc">::</span>flights, </span>
@@ -448,12 +447,12 @@ following columns are not numeric and will be skipped: carrier</code></pre>
 </section>
 <section id="primary-function" class="level1">
 <h1>Primary Function</h1>
-<p><strong>Exercise 3:</strong> Write a <code>fit_model()</code> function that fits a specified linear regression model for a specified dataset. The function should:</p>
+<p><strong>Goal 3:</strong> Write a <code>fit_model()</code> function that fits a specified linear regression model for a specified dataset. The function should:</p>
 <ul>
 <li>allow the user to specify if outliers should be removed (<code>TRUE</code> or <code>FALSE</code>)</li>
 <li>allow the user to specify if missing observations should be imputed (<code>TRUE</code> or <code>FALSE</code>)</li>
 </ul>
-<p>If either option is <code>TRUE</code>, your function should call your <code>remove_outliers()</code> or <code>impute_missing()</code> functions to modify the data <strong>before</strong> the regression model is fit.</p>
+<p>If either option is <code>TRUE</code>, the function should call my <code>remove_outliers()</code> or <code>impute_missing()</code> functions to modify the data <strong>before</strong> the regression model is fit.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>fit_model <span class="ot">&lt;-</span> <span class="cf">function</span>(df, <span class="at">impute_missing =</span> <span class="cn">FALSE</span>, <span class="at">remove_outliers =</span> <span class="cn">FALSE</span>, mod_formula, ...) {</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Check if need imputation</span></span>
@@ -473,8 +472,8 @@ following columns are not numeric and will be skipped: carrier</code></pre>
 <span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(model)</span>
 <span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="testing-your-function-2" class="level2">
-<h2 class="anchored" data-anchor-id="testing-your-function-2">Testing Your Function!</h2>
+<section id="testing-my-function-2" class="level2">
+<h2 class="anchored" data-anchor-id="testing-my-function-2">Testing My Function!</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fit_model</span>(</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  diamonds,</span>
@@ -498,9 +497,9 @@ Coefficients:
 </section>
 <section id="iteration" class="level1">
 <h1>Iteration</h1>
-<p>In the <code>diamonds</code> dataset, we want to understand the relationship between <code>price</code> and size (<code>carat</code>). We want to explore variation along two choices:</p>
+<p>In the <code>diamonds</code> dataset, I want to understand the relationship between <code>price</code> and size (<code>carat</code>). Specifically, I want to explore variation along two choices:</p>
 <ol type="1">
-<li><p>The variables included in the model. We’ll explore 3 sets of variables:</p>
+<li><p>The variables included in the model. I’ll explore 3 sets of variables:</p>
 <ul>
 <li>No further variables (just <code>price</code> and <code>carat</code>)</li>
 <li>Adjusting for <code>cut</code></li>
@@ -508,11 +507,11 @@ Coefficients:
 <li>Adjusting for <code>cut</code>, <code>clarity</code>, and <code>color</code></li>
 </ul></li>
 <li><p>Whether or not to impute missing values</p></li>
-<li><p>Whether or not to remove outliers in the <code>carat</code> variable (we’ll define outliers as cases whose <code>carat</code> is over 3 SDs away from the mean).</p></li>
+<li><p>Whether or not to remove outliers in the <code>carat</code> variable (I’ll define outliers as cases whose <code>carat</code> is over 3 SDs away from the mean).</p></li>
 </ol>
 <section id="parameters" class="level2">
 <h2 class="anchored" data-anchor-id="parameters">Parameters</h2>
-<p>First, we need to define the set of parameters we want to iterate the <code>fit_model()</code> function over. The <code>tidyr</code> package has a useful function called <code>crossing()</code> that is useful for generating argument combinations. For each argument, we specify all possible values for that argument and <code>crossing()</code> generates all combinations. <em>Note that you can create a list of formula objects in R with <code>c(y ~ x1, y ~ x1 + x2)</code>.</em></p>
+<p>First, I need to define the set of parameters I want to iterate the <code>fit_model()</code> function over. The <code>tidyr</code> package has a useful function called <code>crossing()</code> that is useful for generating argument combinations. For each argument, I specify all possible values for that argument and <code>crossing()</code> generates all combinations.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df_arg_combos <span class="ot">&lt;-</span> <span class="fu">crossing</span>(</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">impute =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>),</span>
@@ -522,7 +521,7 @@ Coefficients:
 <span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>df_arg_combos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Exercise 4:</strong> Use <code>crossing()</code> to create the data frame of argument combinations for our analyses.</p>
+<p><strong>Goal 4:</strong> Use <code>crossing()</code> to create the data frame of argument combinations for our analyses.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df_arg_combos <span class="ot">&lt;-</span> <span class="fu">crossing</span>(</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">impute_missing =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>),</span>
@@ -538,8 +537,8 @@ Coefficients:
 </section>
 <section id="iterating-over-the-parameters" class="level2">
 <h2 class="anchored" data-anchor-id="iterating-over-the-parameters">Iterating Over the Parameters</h2>
-<p>We’ve arrived at the final step!</p>
-<p><strong>Exercise 5:</strong> Use <code>pmap()</code> from <code>purrr</code> to apply the <code>fit_model()</code> function to every combination of arguments from `diamonds.</p>
+<p>I’ve arrived at the final step!</p>
+<p><strong>Goal 5:</strong> Use <code>pmap()</code> from <code>purrr</code> to apply the <code>fit_model()</code> function to every combination of arguments from `diamonds.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Apply fit_model to all combinations of arguments using pmap</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">pmap</span>(df_arg_combos, fit_model, <span class="at">df =</span> diamonds, price, carat)</span>
