@@ -77,6 +77,41 @@
     "text": "No matching items"
   },
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Extended Resume",
+    "section": "",
+    "text": "The point of this section is to spend some time talking about some of the jobs I included in my resume. I don’t think it’s going to include anything incredibly different, but it might aid in explaining the scope of some of the work I’ve done."
+  },
+  {
+    "objectID": "resume.html#metaresolve",
+    "href": "resume.html#metaresolve",
+    "title": "Extended Resume",
+    "section": "MetaResolve",
+    "text": "MetaResolve\n\nData Analyst (Current Position)\nI’ve been absolutely delighted to have the opportunity to work at MetaResolve this year. MetaResolve is a computer consulting company that provides a range of services to domain experts across various industries. The team has been exceptional in supporting my professional growth, particularly in consulting, client communication, and data-driven problem solving.\nAs the sole data analyst on the team, I’ve had the unique opportunity to take ownership of data initiatives from end to end. My role involves collaborating directly with consultants and clients to identify business needs, collect and clean complex datasets, and design actionable data solutions that inform decision-making. Through this experience, I’ve strengthened my ability to translate technical analyses into clear, strategic insights and to communicate results effectively to non-technical audiences.\nWorking at MetaResolve has deepened my understanding of how data analytics fits within a consulting environment, where flexibility, curiosity, and clarity are essential. The position has also expanded my technical toolkit, allowing me to apply and refine my skills in various tools while exploring ways to automate workflows and improve data transparency for clients."
+  },
+  {
+    "objectID": "resume.html#gato365",
+    "href": "resume.html#gato365",
+    "title": "Extended Resume",
+    "section": "GATO365",
+    "text": "GATO365\n\nData Science Education Researcher (Current Position)\nIf you would like to know more about my research for this position, head to the research section of my website!\nI began this volunteer research position in June 2025 under the mentorship of Dr. Williams at Cal Poly San Luis Obispo. Together, we focused on developing innovative tools to enhance data science education by creating interactive learning materials that make statistical concepts and coding workflows more intuitive for students. This work has deepened my appreciation for accessible, hands-on teaching methods and strengthened my ability to translate complex technical ideas into clear, engaging educational resources."
+  },
+  {
+    "objectID": "resume.html#cal-poly-statistics-department",
+    "href": "resume.html#cal-poly-statistics-department",
+    "title": "Extended Resume",
+    "section": "Cal Poly Statistics Department",
+    "text": "Cal Poly Statistics Department\n\nInstructional Professor’s Assistant (Current Position)\nFor nearly four years, I have served as the closest equivalent to a Teaching Assistant in Cal Poly’s Statistics Department. In this role, I have supported a wide range of statistics and data science courses, with my most consistent involvement in STAT 251 and STAT 252, our introductory and intermediate business statistics classes. These courses emphasize statistical reasoning, data visualization, regression modeling, and decision-making under uncertainty, all areas where I help students build both conceptual understanding and technical proficiency.\nMy responsibilities extend well beyond grading. I design rubrics, evaluate assignments and exams, and hold regular office hours to guide students through course material, R programming (as well as minitab, JMP, and SAS), and applied problem-solving. I often collaborate with instructors to refine teaching materials and identify where students struggle most, working to create explanations and examples that make abstract concepts more approachable.\nOver the years, this position has profoundly shaped my approach to teaching and mentorship. I’ve learned how to adapt explanations to diverse learning styles, balance detail with intuition, and foster a classroom environment that values curiosity and confidence over rote memorization. Through this work, I’ve developed strong skills in pedagogical design, statistical communication, and student engagement, all of which continue to influence how I approach both education and data analysis.\n\n\nStudent Statistical Consultant (April 2025 - June 2025)\nAs a student consultant, I collaborated with a diverse range of campus and community clients to develop data-driven solutions for real-world problems. My role involved communicating directly with domain experts to understand project goals, define analytical needs, and design appropriate statistical approaches. I conducted data cleaning, exploratory analysis, and modeling using R, SAS, Minitab, and SQL, transforming raw data into meaningful insights that guided decision-making.\nWorking alongside faculty mentors and student teams, I produced custom reports and visualizations that clearly communicated technical findings to non-technical audiences. This experience strengthened my ability to adapt analyses to a client’s specific context and translate quantitative results into clear, actionable recommendations. It also deepened my appreciation for the collaborative nature of applied statistics and the impact of effective data communication."
+  },
+  {
+    "objectID": "resume.html#the-standard-insurance",
+    "href": "resume.html#the-standard-insurance",
+    "title": "Extended Resume",
+    "section": "The Standard Insurance",
+    "text": "The Standard Insurance\n\nActuarial Transformation Intern (June 2024 - September 2024)\nAlthough this position was formally on an actuarial team, the work I performed closely aligned with a data science or data engineering role. The point of the Actuarial Transformation department was to make data cleaning and processing faster, so that actuaries could spend more of their time being, well, actuaries!\nI focused on automating actuarial processes and improving workflow efficiency by developing and deploying pipelines in Dataiku. Collaborating with cross-functional teams, I contributed to projects that leveraged data to enhance business decision-making and operational transparency.\nA key part of my work involved streamlining reporting processes by creating reusable data assets and interactive dashboards, allowing actuarial and business teams to access insights more efficiently. This experience strengthened my technical proficiency in data management and visualization, as well as my ability to translate analytical results into practical, organization-wide improvements.\n\n\nEmployee Benefits Intern (June 2023 - September 2023)\nThis was more of a traditional actuarial science internship, and actually my very first bit of experience in the real world. I worked in the disability insurance sector, specifically in valuation. Here, I aided the team in improving data workflows and ensuring the accuracy of calculations and experience studies. I optimized data processing in SAS EG, reducing manual input and enhancing overall data integrity. I also developed dynamic visualizations in Power BI and Excel to communicate trends, key metrics, and risk insights to both actuarial and business stakeholders.\nA key part of my responsibilities involved cataloguing methodologies and procedures, promoting transparency, consistency, and reproducibility in actuarial analyses. The work that I did here strengthened my understanding of actuarial practices related to disability insurance, including risk modeling, benefits valuation, and regulatory considerations."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About Me",
